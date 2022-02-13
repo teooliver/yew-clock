@@ -1,0 +1,53 @@
+.main {
+  padding: 1rem;
+}
+
+button {
+  padding: 0.4rem 1rem;
+  border: 1px solid transparent;
+  margin: 0.2rem;
+  border-radius: 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.start-btn {
+  background-color: lightgreen;
+}
+
+.start-btn:hover {
+  background-color: limegreen;
+}
+
+.start-btn:active {
+  background-color: darkcyan;
+}
+
+.stop-btn {
+  background-color: coral;
+}
+.stop-btn:hover {
+  background-color: salmon;
+}
+.stop-btn:active {
+  background-color: darksalmon;
+}
+
+.time {
+  font-size: 3rem;
+}
+
+.counter {
+  font-size: 4rem;
+}
+
+.stopwatch {
+  width: fit-content;
+  margin: auto;
+}
+
+.hr {
+  margin: 2rem 0;
+}
