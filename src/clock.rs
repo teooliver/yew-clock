@@ -71,18 +71,16 @@ impl Component for Clock {
     fn view(&self, ctx: &Context<Self>) -> Html {
         html! {
             <>
-            <div id="clock">
-                <div id="time" class="time">
-                    { &self.time }
-                </div>
-                <div>
-                    <button disabled={self.is_running} onclick={ctx.link().callback(|_| Msg::StartClock)} class="cancel-btn">
-                        { "Start Clock" }
-                    </button>
-                    <button disabled={!self.is_running} onclick={ctx.link().callback(|_| Msg::StopClock)} class="cancel-btn">
-                        { "Stop Clock" }
-                    </button>
-                </div>
+            <div id="time" class="time">
+                { &self.time }
+            </div>
+            <div>
+                <button disabled={self.is_running} onclick={ctx.link().callback(|_| Msg::StartClock)} class="start-btn">
+                    { "Start Clock" }
+                </button>
+                <button disabled={!self.is_running} onclick={ctx.link().callback(|_| Msg::StopClock)} class="stop-btn">
+                    { "Stop Clock" }
+                </button>
             </div>
             <hr class="hr" />
             </>
